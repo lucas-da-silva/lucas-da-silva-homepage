@@ -1,12 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
-import Nav from './components/Nav';
+import { HomePage } from './pages';
 
 function App() {
   return (
-    <Routes>
-      <Nav />
-      <Route />
-    </Routes>
+    <section className='bg-black w-screen h-screen text-white'>
+      <Routes>
+        <Route path='/' element={ <HomePage /> } />
+      </Routes>
+    </section>
   )
 }
 
