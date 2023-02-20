@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 
@@ -20,6 +20,10 @@ const links = [
 function Navbar() {
   const [themeIcon, setThemeIcon] = useState('dark');
 
+  useEffect(() => {
+    if (localStorage.isLightMode) setThemeIcon('light');
+  });
+
   const changeTheme = () => {
     if (localStorage.isLightMode) {
       localStorage.removeItem('isLightMode');
@@ -33,8 +37,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex content-center items-center justify-end  m-5">
-      <div className="flex mr-9 rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+    <header className="flex content-center items-center justify-end pt-3 m-3">
+      <nav className="flex mr-9 rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         {links.map(({ path, text }) => (
           <Link
             className="px-3 py-2 mx-1 rounded-md text-sm font-medium hover:text-cyan-300"
@@ -44,8 +48,8 @@ function Navbar() {
             {text}
           </Link>
         ))}
-      </div>
-      <div className="flex mr-2 justify-self-end">
+      </nav>
+      <div className="flex justify-self-end">
         <button
           className="first-line:group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
           onClick={changeTheme}
@@ -57,7 +61,7 @@ function Navbar() {
           )}
         </button>
       </div>
-    </nav>
+    </header>
   );
 }
 

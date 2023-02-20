@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './pages';
 
 function App() {
-  
   if (localStorage.isLightMode) {
     document.documentElement.classList.remove('dark');
   } else {
@@ -10,11 +9,9 @@ function App() {
   }
 
   return (
-    <section>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </section>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
   );
 }
 
