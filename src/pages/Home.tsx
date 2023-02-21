@@ -1,4 +1,5 @@
 import { Navbar } from '../components';
+import Technologies from '../components/Technologies';
 
 function Home() {
   return (
@@ -10,22 +11,23 @@ function Home() {
             <div className="mb-6">
               <img
                 className="w-16 h-16 left-0 top-3 transition-opacity rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
-                src="public/photo.jpg"
+                src="/self/photo.jpg"
                 alt="Lucas da Silva"
               />
             </div>
-            <div className="dark:text-white">
+            <div className="dark:text-white max-w-3xl">
               <h1 className="text-4xl font-bold mb-4 text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                 Desenvolvedor Full Stack
               </h1>
-              <p className='text-zinc-600 dark:text-zinc-400'>
-                Sou Lucas, um desenvolvedor Full Stack morando no Amapá, Brasil.
-                Sou apaixonado por tecnologias, estou sempre estudando e
+              <p className="text-zinc-600 dark:text-zinc-400">
+                Sou o Lucas, um desenvolvedor Full Stack morando no Amapá. Sou
+                apaixonado por tecnologias, estou sempre estudando e
                 desenvolvendo aplicações, sendo meu objetivo desenvolver
                 aplicações que impactam positivamente e agregam valor a quem as
                 consome.
               </p>
             </div>
+            <Technologies />
           </main>
         </div>
       </div>
