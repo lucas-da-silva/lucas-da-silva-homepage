@@ -12,12 +12,16 @@ const links = [
     text: 'Projetos',
   },
   {
-    path: '/contact',
-    text: 'Contato',
-  },
+    path: '/about',
+    text: 'Sobre'
+  }
+  // {
+  //   path: '/contact',
+  //   text: 'Contato',
+  // },
 ];
 
-function Navbar() {
+function Header() {
   const [themeIcon, setThemeIcon] = useState('dark');
 
   useEffect(() => {
@@ -65,4 +69,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;
