@@ -1,4 +1,7 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import IPortfolioContext from '../interfaces/IPortfolioContext';
+import PortfolioContext from '../provider/PortfolioContext';
 
 const links = [
   {
@@ -16,16 +19,17 @@ const links = [
 ];
 
 function Navbar({ navBarStyle = '' }) {
-  const navStyle =
-    navBarStyle.length > 0
-      ? `${navBarStyle} text-zinc-800 dark:text-zinc-200`
-      : 'text-zinc-800 dark:text-zinc-200';
+  const { currentPage } = useContext(PortfolioContext) as IPortfolioContext;
 
   return (
-    <nav className={navStyle}>
+    <nav className={navBarStyle}>
       {links.map(({ path, text }) => (
         <Link
-          className="px-3 py-2 mx-1 rounded-md text-sm font-medium hover:text-cyan-300"
+          className={`px-3 py-2 mx-1 rounded-md text-sm font-medium hover:text-cyan-300 ${
+            path === currentPage
+              ? 'text-cyan-300'
+              : `text-zinc-800 dark:text-zinc-200`
+          } `}
           to={path}
           key={text}
         >
