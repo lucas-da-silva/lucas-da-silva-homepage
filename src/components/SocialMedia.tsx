@@ -9,20 +9,20 @@ function SocialMedia() {
         className="flex text-zinc-700 dark:text-zinc-400 items-center hover:text-cyan-300 dark:hover:text-cyan-300"
         href="https://github.com/Lucas-da-Silva" 
       >
-        <FontAwesomeIcon className="mr-2" icon={faGithub} />{' '}
+        <FontAwesomeIcon className="mr-2 text-lg" icon={faGithub} />{' '}
         <p>@lucas-da-silva</p>
       </a>
       <a
         className="flex text-zinc-700 dark:text-zinc-400 items-center hover:text-cyan-300 dark:hover:text-cyan-300"
         href="https://www.linkedin.com/in/lucasdasilvadev/"
       >
-        <FontAwesomeIcon className="mr-2" icon={faLinkedin} /> @lucasdasilvadev
+        <FontAwesomeIcon className="mr-2 text-lg" icon={faLinkedin} /> @lucasdasilvadev
       </a>
       <a
         className="flex text-zinc-700 dark:text-zinc-400 items-center hover:text-cyan-300 dark:hover:text-cyan-300"
         href="mailto:lucasdasilvadev1@gmail.com"
       >
-        <FontAwesomeIcon className="mr-2" icon={faEnvelope} />{' '}
+        <FontAwesomeIcon className="mr-2 text-lg" icon={faEnvelope} />{' '}
         lucasdasilvadev1@gmail.com
       </a>
     </div>

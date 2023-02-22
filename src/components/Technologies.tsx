@@ -92,7 +92,7 @@ function Technologies() {
           <h4>Front End</h4>
           <div className="flex flex-wrap justify-center mt-4 space-x-2">
             {technologiesFrontEnd.map(({ ref, path, text }) => (
-              <a href={ref}>
+              <a href={ref} key={text}>
                 <img
                   src={`/technologies-logo${path}`}
                   alt={text}
@@ -106,7 +106,7 @@ function Technologies() {
           <h4>Back end</h4>
           <div className="flex flex-wrap justify-center mt-4 space-x-2">
             {technologiesBackEnd.map(({ ref, path, text }) => (
-              <a href={ref}>
+              <a href={ref} key={text}>
                 <img
                   src={`/technologies-logo${path}`}
                   alt={text}
