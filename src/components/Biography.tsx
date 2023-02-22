@@ -12,7 +12,7 @@ function Biography() {
         <div className="flex">
           <span className="mr-4 font-semibold">2020</span>
           <p className="max-w-5xl">
-            Comecei a estudar programação de forma autonoma, através de cursos e
+            Comecei a estudar programação de forma autônoma, por cursos e
             conteúdos disponíveis na internet
           </p>
         </div>

@@ -2,7 +2,7 @@ import { Header, Technologies, Biography, SocialMedia } from '../components';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useContext } from 'react';
-import IPortfolioContext from '../interfaces/IPortfolioContext';
+import { IPortfolioContext } from '../interfaces';
 import PortfolioContext from '../provider/PortfolioContext';
 
 function Home() {

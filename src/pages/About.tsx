@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Header } from '../components';
-import IPortfolioContext from '../interfaces/IPortfolioContext';
+import { IPortfolioContext } from '../interfaces';
 import PortfolioContext from '../provider/PortfolioContext';
 
 function About() {

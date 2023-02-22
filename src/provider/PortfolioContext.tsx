@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import IPortfolioContext from '../interfaces/IPortfolioContext';
+import { IPortfolioContext } from '../interfaces';
 
 const PortfolioContext = createContext<IPortfolioContext | null>(null);
 
