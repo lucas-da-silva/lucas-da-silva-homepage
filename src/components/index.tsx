@@ -5,6 +5,7 @@ import Footer from './Footer';
 import SocialMedia from './SocialMedia';
 import Navbar from './Navbar';
 import ProjectCard from './ProjectCard';
+import HomeTitle from './HomeTitle';
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   SocialMedia,
   Navbar,
   ProjectCard,
+  HomeTitle,
 };

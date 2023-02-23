@@ -17,10 +17,15 @@ function Biography() {
           </p>
         </div>
         <div className="flex">
-          <span className="mr-4 font-semibold">2023 até o presente</span>
+          <span className="mr-4 font-semibold">2023</span>
           <p className="max-w-5xl">
-            Me profissionalizei em desenvolvimento web através da Trybe, estou
-            em busca de vagas no mercado de tecnologia
+            Me profissionalizei em desenvolvimento web através da Trybe
+          </p>
+        </div>
+        <div className="flex">
+          <span className="mr-4 font-semibold">Presente</span>
+          <p className="max-w-5xl">
+            Trabalho como freelancer e busco trabalho como desenvolver
           </p>
         </div>
       </div>
