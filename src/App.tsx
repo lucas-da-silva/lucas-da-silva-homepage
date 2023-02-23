@@ -1,12 +1,12 @@
-import PageRoutes from './PageRoutes';
-import { Footer } from './components';
-import PortfolioProvider from './provider/PortfolioProvider';
+import PageRoutes from "./PageRoutes";
+import { Footer } from "./components";
+import PortfolioProvider from "./provider/PortfolioProvider";
 
 function App() {
   if (localStorage.isLightMode) {
-    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.remove("dark");
   } else {
-    document.documentElement.classList.add('dark');
+    document.documentElement.classList.add("dark");
   }
 
   return (
