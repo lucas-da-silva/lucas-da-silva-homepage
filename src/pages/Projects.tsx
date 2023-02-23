@@ -5,16 +5,37 @@ import PortfolioContext from '../provider/PortfolioContext';
 
 const projects = [
   {
-    img: '/projects/trybewallet.png',
-    title: 'Trybewallet',
-    describe:
-      'Uma carteira virtual onde é possível realizar diversas operações com gastos',
+    img: '/projects/trivia.png',
+    title: 'Trivia',
+    describe: 'Jogo de perguntas e respostas, semelhante ao Show do milhão',
   },
   {
     img: '/projects/recipes-app.png',
     title: 'App de receitas',
     describe:
-      'Um aplicativo de receitas de comidas e bebidas desenvolvido em equipe',
+      'Aplicativo de receitas de comidas e bebidas',
+  },
+  {
+    img: '/projects/tryber-soccer-club.png',
+    title: 'Trybe Soccer Club',
+    describe:
+      'Aplicação de futebol que possui um ranking e partidas de times de futebol',
+  },
+  {
+    img: '/projects/trybewallet.png',
+    title: 'Trybewallet',
+    describe:
+      'Carteira virtual onde é possível realizar diversas operações com gastos',
+  },
+  {
+    img: '/projects/tryunfo.png',
+    title: 'Tryunfo',
+    describe: 'Jogo de criar baralhos com temas livre, no estilo Super Trunfo',
+  },
+  {
+    img: '/projects/car-shop.png',
+    title: 'Car Shop',
+    describe: 'API para gerenciar uma loja de veículos',
   },
 ];
 
@@ -23,7 +44,7 @@ function Projects() {
   changePage('/projects');
 
   return (
-    <section>
+    <section className='mb-24'>
       <Header />
       <main className="mt-28">
         <div className="dark:text-white max-w-4xl mb-16">
@@ -36,7 +57,7 @@ function Projects() {
             os que mais tive mais prazer em desenvolver.
           </p>
         </div>
-        <div className="flex justify-between mb-6 sm:space-x-10">
+        <div className="flex justify-center flex-wrap">
           {projects.map(({ img, title, describe }) => (
             <ProjectCard img={img} title={title} describe={describe} />
           ))}

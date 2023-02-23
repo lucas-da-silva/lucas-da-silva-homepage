@@ -10,7 +10,7 @@ function Home() {
   changePage('/');
 
   return (
-    <section>
+    <section className='mb-28'>
       <Header />
       <main className="flex flex-col mt-10">
         <div className="mb-6">

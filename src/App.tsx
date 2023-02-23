@@ -16,7 +16,7 @@ function App() {
           <div className="lg:px-10 px-4">
             <PageRoutes />
           </div>
-          <div className="mt-24 mb-16">
+          <div className="mb-16">
             <Footer />
           </div>
         </div>
