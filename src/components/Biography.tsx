@@ -25,7 +25,7 @@ function Biography() {
         <div className="flex">
           <span className="mr-4 font-semibold">Presente</span>
           <p className="max-w-5xl">
-            Trabalho como freelancer e busco trabalho como desenvolver
+            Trabalho como freelancer e busco vaga como Full Stack
           </p>
         </div>
       </div>

@@ -46,7 +46,7 @@ function Projects() {
   return (
     <section className='mb-24'>
       <Header />
-      <main className="mt-28">
+      <main className="mt-24">
         <div className="dark:text-white max-w-4xl mb-16">
           <h1 className="text-4xl font-bold mb-6 text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Projetos

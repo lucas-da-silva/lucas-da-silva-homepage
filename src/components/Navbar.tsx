@@ -25,9 +25,9 @@ function Navbar({ navBarStyle = '' }) {
     <nav className={navBarStyle}>
       {links.map(({ path, text }) => (
         <Link
-          className={`px-3 py-2 mx-1 rounded-md text-sm font-medium hover:text-cyan-300 ${
+          className={`px-3 py-2 mx-1 text-sm font-medium hover:text-cyan-300 ${
             path === currentPage
-              ? 'text-cyan-300'
+              ? 'text-cyan-300 border-b border-cyan-300'
               : `text-zinc-800 dark:text-zinc-200`
           } `}
           to={path}
