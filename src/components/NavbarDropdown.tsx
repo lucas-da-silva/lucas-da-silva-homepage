@@ -4,21 +4,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import IPortfolioContext from '../interfaces/IPortfolioContext';
 import PortfolioContext from '../provider/PortfolioContext';
-
-const links = [
-  {
-    path: '/',
-    text: 'Início',
-  },
-  {
-    path: '/projects',
-    text: 'Projetos',
-  },
-  {
-    path: '/about',
-    text: 'Sobre',
-  },
-];
+import navbarLinks from '../utils/navbarLinks';
 
 function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(' ');
@@ -46,8 +32,8 @@ function NavbarDropdown() {
       >
         <Menu.Items className="text-sm font-medium absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white dark:bg-zinc-800/90 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
-            {links.map(({ path, text }) => (
-              <Menu.Item key={`navbar-dropdown-${text}`}>
+            {navbarLinks.map(({ path, text }) => (
+              <Menu.Item key={text}>
                 {({ active }) => (
                   <Link
                     to={path}
