@@ -7,13 +7,16 @@ import {
 } from '../components';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { IPortfolioContext } from '../interfaces';
 import PortfolioContext from '../provider/PortfolioContext';
 
 function Home() {
   const { changePage } = useContext(PortfolioContext) as IPortfolioContext;
-  changePage('/');
+
+  useEffect(() => {
+    changePage('/');
+  }, []);
 
   return (
     <section className="mb-28">

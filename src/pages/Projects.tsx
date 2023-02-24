@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { Header, ProjectCard } from '../components';
 import { IPortfolioContext } from '../interfaces';
 import PortfolioContext from '../provider/PortfolioContext';
@@ -12,8 +12,7 @@ const projects = [
   {
     img: '/projects/recipes-app.png',
     title: 'App de receitas',
-    describe:
-      'Aplicativo de receitas de comidas e bebidas',
+    describe: 'Aplicativo de receitas de comidas e bebidas',
   },
   {
     img: '/projects/tryber-soccer-club.png',
@@ -41,10 +40,13 @@ const projects = [
 
 function Projects() {
   const { changePage } = useContext(PortfolioContext) as IPortfolioContext;
-  changePage('/projects');
+
+  useEffect(() => {
+    changePage('/projects');
+  }, []);
 
   return (
-    <section className='mb-24'>
+    <section className="mb-24">
       <Header />
       <main className="mt-24">
         <div className="dark:text-white max-w-4xl mb-16">
@@ -59,7 +61,12 @@ function Projects() {
         </div>
         <div className="flex justify-center flex-wrap">
           {projects.map(({ img, title, describe }) => (
-            <ProjectCard img={img} title={title} describe={describe} />
+            <ProjectCard
+              img={img}
+              title={title}
+              describe={describe}
+              key={title}
+            />
           ))}
         </div>
       </main>
