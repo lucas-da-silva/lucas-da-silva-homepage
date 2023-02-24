@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import IPortfolioContext from '../interfaces/IPortfolioContext';
 import PortfolioContext from '../provider/PortfolioContext';
-import navbarLinks from '../utils/navbarLinks';
+import { navbarLinks } from '../utils';
 
 function Navbar({ navBarStyle = '' }) {
   const { currentPage } = useContext(PortfolioContext) as IPortfolioContext;

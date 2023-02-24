@@ -4,7 +4,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import IPortfolioContext from '../interfaces/IPortfolioContext';
 import PortfolioContext from '../provider/PortfolioContext';
-import navbarLinks from '../utils/navbarLinks';
+import { navbarLinks } from '../utils';
 
 function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(' ');
