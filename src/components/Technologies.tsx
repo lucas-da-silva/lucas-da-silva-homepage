@@ -117,9 +117,9 @@ function Technologies() {
           </div>
         </div>
       </div>
-      <button className="py-2 text-zinc-100 dark:text-zinc-800 w-52 self-center rounded-2xl bg-cyan-500 dark:bg-cyan-300 shadow-lg shadow-zinc-800/5 ring-1 ring-cyan-200 backdrop-blur transition hover:bg-cyan-600 dark:hover:bg-cyan-400 hover:text-zinc-50 dark:hover:text-zinc-900">
+      <button className="py-2 text-white dark:text-zinc-900 w-52 self-center rounded-2xl bg-cyan-500 dark:bg-cyan-300 shadow-lg shadow-zinc-800/5 ring-1 ring-cyan-200 backdrop-blur transition hover:bg-cyan-600 dark:hover:bg-cyan-400">
         <Link
-          className="font-medium"
+          className="font-semibold"
           to="/projects"
         >
           Meu portfólio

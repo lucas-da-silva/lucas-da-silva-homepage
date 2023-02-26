@@ -9,7 +9,7 @@ function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
     <div>
       <div className="flex items-center dark:text-white mb-4">
         <Link
-          className="text-lg text-cyan-300 dark:text-cyan-300 hover:underline decoration-cyan-300 underline-offset-4"
+          className="text-lg text-blue-600 dark:text-pink-500 hover:underline decoration-blue-600 dark:decoration-pink-500 underline-offset-4"
           to="/projects"
         >
           Projetos
@@ -27,7 +27,7 @@ function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
       <div className="flex flex-col space-y-2 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 mt-6">
         {website && (
           <div className="flex items-center">
-            <span className="p-1 rounded-2xl bg-cyan-300 mr-2 font-medium">
+            <span className="text-cyan-50 dark:text-cyan-900 p-1 rounded-2xl bg-cyan-500 dark:bg-cyan-300 mr-2 font-semibold">
               Site
             </span>
             <a
@@ -40,7 +40,7 @@ function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
         )}
         {platform && (
           <div className="flex items-center">
-            <span className="p-1 rounded-2xl bg-cyan-300 mr-2 font-medium">
+            <span className="text-cyan-50 dark:text-cyan-900 p-1 rounded-2xl bg-cyan-500 dark:bg-cyan-300 mr-2 font-semibold">
               Plataforma
             </span>
             <p className="text-zinc-600 dark:text-zinc-400">
@@ -49,7 +49,7 @@ function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
           </div>
         )}
         <div className="flex items-center">
-          <span className="p-1 rounded-2xl bg-cyan-300 mr-2 font-medium">
+          <span className="text-cyan-50 dark:text-cyan-900 p-1 rounded-2xl bg-cyan-500 dark:bg-cyan-300 mr-2 font-semibold">
             Tecnologia
           </span>
           <p className="text-zinc-600 dark:text-zinc-400">
@@ -57,7 +57,7 @@ function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
           </p>
         </div>
         <div className="flex items-center">
-          <span className="p-1 rounded-2xl bg-cyan-300 mr-2 font-medium">
+          <span className="text-cyan-50 dark:text-cyan-900 p-1 rounded-2xl bg-cyan-500 dark:bg-cyan-300 mr-2 font-semibold">
             Fonte
           </span>
           <a

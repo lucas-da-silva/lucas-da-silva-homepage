@@ -16,8 +16,8 @@ function NavbarDropdown() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 hover:ring-zinc-300 dark:hover:ring-zinc-600">
-          <Bars3Icon className="h-6 w-6 stroke-gray-600 dark:stroke-white group-hover:stroke-cyan-300" />
+        <Menu.Button className="rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-700 bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 hover:ring-zinc-300 dark:hover:ring-zinc-600">
+          <Bars3Icon className="h-6 w-6 stroke-zinc-900 dark:stroke-white" />
         </Menu.Button>
       </div>
 
@@ -39,10 +39,10 @@ function NavbarDropdown() {
                     to={path}
                     className={classNames(
                       active
-                        ? 'bg-zinc-50 dark:bg-zinc-700 text-cyan-300'
+                        ? 'bg-zinc-50 dark:bg-zinc-700 text-cyan-500 dark:text-cyan-400'
                         : 'bg-white dark:bg-zinc-800/90',
                       currentPage === path
-                        ? 'text-cyan-300'
+                        ? 'text-cyan-500 dark:text-cyan-300'
                         : 'text-zinc-800 dark:text-zinc-200',
                       'flex px-4 py-2 text-sm'
                     )}
@@ -50,7 +50,7 @@ function NavbarDropdown() {
                     <p
                       className={
                         currentPage === path
-                          ? `border-b border-cyan-300`
+                          ? `border-b border-cyan-500 dark:border-cyan-300`
                           : undefined
                       }
                     >
