@@ -3,9 +3,9 @@ interface IProjectDetails {
   describe: string;
   images: string[];
   stacks: string[];
+  source: string;
   website?: string;
-  platform?: string;
-  source?: string;
+  platform?: string[];
   video?: string;
 }
 

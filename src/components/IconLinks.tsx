@@ -8,6 +8,7 @@ function IconLinks() {
         <a
           className="flex text-zinc-500 dark:text-zinc-400 items-center hover:text-cyan-300 dark:hover:text-cyan-300"
           href={ref}
+          key={ref}
         >
           <FontAwesomeIcon className="text-lg" icon={icon} />
         </a>

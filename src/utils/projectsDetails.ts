@@ -24,6 +24,7 @@ const projectsDetails: IProjectDetails[] = [
       'Aplicação de futebol que possui um ranking e partidas de times de futebol',
     stacks: ['NodeJS', 'ExpressJS', 'MySQL', 'Sequelize'],
     source: 'https://github.com/lucas-da-silva/api-tryber-soccer-club',
+    video: '/videos/tryber-soccer-club.mp4'
   },
   {
     images: ['/projects/trybewallet.png'],
@@ -36,7 +37,7 @@ const projectsDetails: IProjectDetails[] = [
   },
   {
     images: ['/projects/tryunfo.png'],
-    title: 'Tryunfo',
+    title: 'Jogo Tryunfo',
     describe: 'Jogo de criar baralhos com temas livre, no estilo Super Trunfo',
     stacks: ['React'],
     website: 'https://lucas-da-silva.github.io/tryunfo-game/',
@@ -47,7 +48,6 @@ const projectsDetails: IProjectDetails[] = [
     title: 'Car Shop',
     describe: 'API para gerenciar uma loja de veículos',
     stacks: ['NodeJS', 'ExpressJS', 'MongoDB'],
-    website: '',
     source: 'https://github.com/lucas-da-silva/api-car-shop',
   },
 ];

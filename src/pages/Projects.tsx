@@ -26,11 +26,12 @@ function Projects() {
           </p>
         </div>
         <div className="flex justify-center flex-wrap">
-          {projects.map(({ img, title, describe }) => (
+          {projects.map(({ img, title, describe, pageDetails }) => (
             <ProjectCard
               img={img}
               title={title}
               describe={describe}
+              pageDetails={pageDetails}
               key={title}
             />
           ))}
