@@ -6,24 +6,24 @@ function Biography() {
       </h3>
       <div className="flex flex-col text-zinc-600 dark:text-zinc-400 space-y-0.5">
         <div className="flex">
-          <span className="mr-4 font-semibold">2001</span>
+          <span className="mr-4 font-bold">2001</span>
           <p className="max-w-5xl">Nasci no Amapá, Brasil.</p>
         </div>
         <div className="flex">
-          <span className="mr-4 font-semibold">2020</span>
+          <span className="mr-4 font-bold">2020</span>
           <p className="max-w-5xl">
             Comecei a estudar programação de forma autônoma, por cursos e
             conteúdos disponíveis na internet
           </p>
         </div>
         <div className="flex">
-          <span className="mr-4 font-semibold">2023</span>
+          <span className="mr-4 font-bold">2023</span>
           <p className="max-w-5xl">
             Me profissionalizei em desenvolvimento web através da Trybe
           </p>
         </div>
         <div className="flex">
-          <span className="mr-4 font-semibold">Presente</span>
+          <span className="mr-4 font-bold">Presente</span>
           <p className="max-w-5xl">
             Trabalho como freelancer e busco vaga como Full Stack
           </p>
