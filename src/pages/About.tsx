@@ -56,7 +56,7 @@ function About() {
             <IconLinks />
           </div>
         </div>
-        <div className="lg:hidden order-3 self-center mt-10">
+        <div className="lg:hidden order-3 self-center mt-12">
           <IconLinks />
         </div>
       </main>

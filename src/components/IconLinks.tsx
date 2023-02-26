@@ -6,7 +6,7 @@ function IconLinks() {
     <div className="flex space-x-9">
       {socialMediaLinks.map(({ icon, ref }) => (
         <a
-          className="flex text-zinc-500 dark:text-zinc-400 items-center hover:text-cyan-300 dark:hover:text-cyan-300"
+          className="flex text-zinc-500 dark:text-zinc-400 items-center transition hover:text-cyan-500 dark:hover:text-cyan-300"
           href={ref}
           key={ref}
         >
