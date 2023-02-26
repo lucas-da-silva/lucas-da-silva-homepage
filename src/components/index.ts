@@ -7,6 +7,7 @@ import Navbar from './Navbar';
 import ProjectCard from './ProjectCard';
 import HomeTitle from './HomeTitle';
 import IconLinks from './IconLinks';
+import ProjectDetailsCard from './ProjectDetailsCard';
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   ProjectCard,
   HomeTitle,
   IconLinks,
+  ProjectDetailsCard,
 };

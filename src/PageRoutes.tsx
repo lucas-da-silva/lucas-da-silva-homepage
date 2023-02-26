@@ -1,12 +1,26 @@
 import { Route, Routes } from 'react-router-dom';
-import { HomePage, ProjectsPage, AboutPage, ProjectDetailsPage } from './pages';
+import {
+  HomePage,
+  ProjectsPage,
+  AboutPage,
+  ProjectDetailsPage,
+  NotFoundPage,
+} from './pages';
+import { projects } from './utils';
 function PageRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/about" element={<AboutPage />} />
+      {projects.map(({ pageDetails }) => (
+        <Route
+          path={`/projects/${pageDetails}`}
+          element={<ProjectDetailsPage projectName={pageDetails} />}
+          key={pageDetails}
+        />
+      ))}
       <Route path="/projects" element={<ProjectsPage />} />
-      <Route path="/projects/:projectName" element={<ProjectDetailsPage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
