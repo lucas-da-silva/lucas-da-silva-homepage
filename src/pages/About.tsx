@@ -13,8 +13,8 @@ function About() {
   return (
     <section className="mb-20">
       <Header />
-      <main className="flex flex-col lg:flex-row mt-24">
-        <div className="order-1 lg:order-0 lg:max-w-2xl xl:max-w-4xl 2xl:max-w-4xl">
+      <main className="flex flex-col lg:flex-row lg:justify-between mt-24">
+        <div className="order-1 lg:order-0 lg:w-8/12">
           <h1 className="text-4xl font-bold mb-8 text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Sou o Lucas da Silva, um apaixonado por criar aplicações digitais
             que deseja.
@@ -36,8 +36,8 @@ function About() {
             <p>
               Aos 18 anos decide que iria trabalhar como desenvolvedor, sendo o
               início dos meus estudos focado em programação web. Nos anos
-              seguintes, estudei por cursos, documentação e livros,
-              sempre desenvolvendo projetos tanto individuais quanto em grupo.
+              seguintes, estudei por cursos, documentação e livros, sempre
+              desenvolvendo projetos tanto individuais quanto em grupo.
             </p>
             <p>
               Hoje, atuo como freelancer, além de buscar empresas que tenham o
@@ -46,13 +46,13 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="flex ml-6 mb-5 items-center order-0 md:ml-10 lg:order-1 lg:flex-col lg:ml-10 xl:ml-14">
+        <div className="flex ml-3 mb-5 items-center order-0 lg:ml-16 lg:order-1 lg:flex-col lg:w-3/12">
           <img
-            className="w-40 h-40 left-0 top-3 transition-opacity rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
-            src="/self/photo.jpg"
+            className="w-48 h-48 lg:w-60 lg:h-60 transition-opacity rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
+            src="/self/photo.png"
             alt="Lucas da Silva"
           />
-          <div className="hidden lg:flex mt-5">
+          <div className="hidden lg:flex mt-10">
             <IconLinks />
           </div>
         </div>
