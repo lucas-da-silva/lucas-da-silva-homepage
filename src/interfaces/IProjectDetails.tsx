@@ -5,7 +5,7 @@ interface IProjectDetails {
   stacks: string[];
   source: string;
   website?: string;
-  platform?: string[];
+  platforms?: string[];
   video?: string;
 }
 

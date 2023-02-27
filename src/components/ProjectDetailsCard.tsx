@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { IProjectDetails } from '../interfaces';
+import ProjectDetailsImages from './ProjectDetailsImages';
+import ProjectDetailsVideo from './ProjectDetailsVideo';
 
 function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
-  const { title, images, describe, stacks, website, platform, source, video } =
+  const { title, images, describe, stacks, website, platforms, source, video } =
     project;
+
+  const mobile =
+    platforms &&
+    platforms.some((platform) => platform === 'Android' || platform === 'IOS');
 
   return (
     <div>
@@ -21,7 +27,7 @@ function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
           {title}
         </h3>
       </div>
-      <div className="flex flex-wrap text-zinc-600 dark:text-zinc-400">
+      <div className="flex flex-wrap text-zinc-600 dark:text-zinc-400 lg:w-10/12">
         <p>{describe}</p>
       </div>
       <div className="flex flex-col space-y-2 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 mt-6">
@@ -38,13 +44,13 @@ function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
             </a>
           </div>
         )}
-        {platform && (
+        {platforms && (
           <div className="flex items-center">
             <span className="text-cyan-50 dark:text-cyan-900 p-1 rounded-2xl bg-cyan-500 dark:bg-cyan-300 mr-2 font-semibold">
               Plataforma
             </span>
             <p className="text-zinc-600 dark:text-zinc-400">
-              {platform.join('/')}
+              {platforms.join('/')}
             </p>
           </div>
         )}
@@ -69,23 +75,8 @@ function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
         </div>
       </div>
       <div className="flex flex-col items-center space-y-6 rounded-2xl border border-zinc-100 p-6 md:p-10 dark:border-zinc-700/40 mt-6">
-        {images.map((image) => (
-          <img
-            src={image}
-            className="rounded-2xl border border-zinc-50 dark:border-zinc-900"
-            key={image}
-          />
-        ))}
-        {video && (
-          <video
-            className="w-full rounded-2xl border border-zinc-50 dark:border-zinc-900"
-            controls
-            muted
-          >
-            <source src={video} type="video/mp4" />
-            Your browser does not support the video format
-          </video>
-        )}
+        <ProjectDetailsImages images={images} mobile={mobile} />
+        {video && <ProjectDetailsVideo video={video} />}
       </div>
     </div>
   );
