@@ -54,7 +54,7 @@ const projectsDetails: IProjectDetails[] = [
     title: 'Car Shop',
     describe:
       'API para gerenciar uma loja de veículos, criada seguindo os princípios de POO, desenvolvimento orientado a comportamentos (BDD) e utilizando o MongoDB como banco de dados',
-    stacks: ['NodeJS', 'ExpressJS', 'MongoDB', 'Mongoose', 'Jest', 'Chai'],
+    stacks: ['TypeScript', 'ExpressJS', 'MongoDB', 'Mongoose', 'Jest',],
     source: 'https://github.com/lucas-da-silva/api-car-shop',
   },
 ];
