@@ -22,13 +22,13 @@ const projectsDetails: IProjectDetails[] = [
     source: 'https://github.com/lucas-da-silva/recipes-app',
   },
   {
-    images: ['/projects/tryber-soccer-club.png'],
+    images: ['/projects/trybe-soccer-club.png'],
     title: 'Trybe Soccer Club',
     describe:
       'Aplicação de futebol que é possível visualizar partidas e ranking de times de futebol. Além de ter sido criado uma API que consome um banco de dados para armazenar as informações da partida.',
     stacks: ['NodeJS', 'ExpressJS', 'MySQL', 'Sequelize'],
-    source: 'https://github.com/lucas-da-silva/api-tryber-soccer-club',
-    video: '/videos/tryber-soccer-club.mp4',
+    source: 'https://github.com/lucas-da-silva/api-trybe-soccer-club',
+    video: '/videos/trybe-soccer-club.mp4',
   },
   {
     images: ['/projects/trybewallet.png'],

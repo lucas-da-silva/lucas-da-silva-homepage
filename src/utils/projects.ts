@@ -14,7 +14,7 @@ const projects: IProject[] = [
     pageDetails: 'recipesapp',
   },
   {
-    img: '/projects/tryber-soccer-club.png',
+    img: '/projects/trybe-soccer-club.png',
     title: 'Trybe Soccer Club',
     describe:
       'Aplicação de futebol que possui um ranking e partidas de times de futebol',
