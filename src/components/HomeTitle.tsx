@@ -12,15 +12,17 @@ function HomeTitle() {
           positivamente e agregam valor a quem as consome.
         </p>
       </div>
-      <div className="flex order-0 lg:order-1 ml-3 mb-5 lg:ml-0 lg:w-1/4 lg:justify-center">
-        <img
-          className="w-24 h-24 md:w-32 md:h-32 left-0 top-3 transition-opacity rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
-          src="/self/photo-1.png"
-          alt="Lucas da Silva"
-        />
+      <div className="flex first:first-line:order-0 lg:order-1 ml-3 mb-5 lg:ml-0 lg:w-1/4 lg:justify-center">
+        <div className="w-24 h-24 md:w-32 md:h-32 border-zinc-50 border-solid border-2 rounded-full overflow-hidden inline-block dark:border-zinc-800/90">
+          <img
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full"
+            src="/self/photo-1.png"
+            alt="Profile image"
+          />
+        </div>
       </div>
     </div>
-  );
+  ); 
 }
 
 export default HomeTitle;

@@ -47,11 +47,13 @@ function About() {
           </div>
         </div>
         <div className="flex ml-3 mb-5 items-center order-0 lg:ml-16 lg:order-1 lg:flex-col lg:w-3/12">
-          <img
-            className="w-48 h-48 lg:w-60 lg:h-60 transition-opacity rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
-            src="/self/photo.png"
-            alt="Lucas da Silva"
-          />
+          <div className="w-44 h-44 lg:w-60 lg:h-60 border-zinc-50 dark:border-zinc-800/90 border-solid border-2 rounded-full overflow-hidden inline-block">
+            <img
+              className="w-44 h-44 lg:w-60 lg:h-60 rounded-full"
+              src="/self/photo.png"
+              alt="Lucas da Silva"
+            />
+          </div>
           <div className="hidden lg:flex mt-10">
             <IconLinks />
           </div>
