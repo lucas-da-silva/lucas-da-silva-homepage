@@ -3,7 +3,7 @@ import {
   Technologies,
   Biography,
   SocialMedia,
-  HomeTitle,
+  HomeTitle
 } from '../components';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

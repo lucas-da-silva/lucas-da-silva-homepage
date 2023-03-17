@@ -22,7 +22,7 @@ function HomeTitle() {
         </div>
       </div>
     </div>
-  ); 
+  );
 }
 
 export default HomeTitle;

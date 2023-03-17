@@ -8,7 +8,7 @@ function PortfolioProvider({ children }: { children: JSX.Element }) {
 
   const contextType = {
     currentPage,
-    changePage,
+    changePage
   };
 
   return (

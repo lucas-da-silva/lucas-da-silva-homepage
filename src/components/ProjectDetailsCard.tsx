@@ -9,7 +9,7 @@ function ProjectDetailsCard({ project }: { project: IProjectDetails }) {
 
   const mobile =
     platforms &&
-    platforms.some((platform) => platform === 'Android' || platform === 'IOS');
+    platforms.some(platform => platform === 'Android' || platform === 'IOS');
 
   return (
     <div>

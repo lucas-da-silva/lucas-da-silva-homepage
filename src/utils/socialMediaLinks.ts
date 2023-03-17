@@ -16,7 +16,7 @@ const socialMediaLinks = [
     icon: faEnvelope,
     ref: 'mailto:lucasdasilvadev1@gmail.com',
     text: 'lucasdasilvadev1@gmail.com'
-  },
+  }
 ];
 
 export default socialMediaLinks;

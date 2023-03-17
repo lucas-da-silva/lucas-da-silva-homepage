@@ -2,7 +2,7 @@ import { classNames } from '../utils';
 
 function ProjectDetailsImages({
   images,
-  mobile,
+  mobile
 }: {
   images: string[];
   mobile: boolean | undefined;
@@ -10,13 +10,11 @@ function ProjectDetailsImages({
   return (
     <div
       className={classNames(
-        mobile
-          ? 'md:space-x-4 md:flex-row space-y-6 md:space-y-0'
-          : '',
+        mobile ? 'md:space-x-4 md:flex-row space-y-6 md:space-y-0' : '',
         'flex flex-col items-center'
       )}
     >
-      {images.map((image) => (
+      {images.map(image => (
         <img
           src={image}
           className={classNames(

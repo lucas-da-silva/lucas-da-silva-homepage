@@ -1,16 +1,16 @@
 const links = [
   {
     path: '/',
-    text: 'Início',
+    text: 'Início'
   },
   {
     path: '/projects',
-    text: 'Projetos',
+    text: 'Projetos'
   },
   {
     path: '/about',
-    text: 'Sobre',
-  },
+    text: 'Sobre'
+  }
 ];
 
 export default links;

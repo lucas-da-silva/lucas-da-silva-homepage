@@ -4,81 +4,81 @@ const technologiesFrontEnd = [
   {
     ref: 'https://www.javascript.com/',
     path: '/javascript.svg',
-    text: 'JavaScript',
+    text: 'JavaScript'
   },
   {
     ref: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     path: '/css-3.svg',
-    text: 'CSS 3',
+    text: 'CSS 3'
   },
   {
     ref: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     path: '/html.svg',
-    text: 'HTML 5',
+    text: 'HTML 5'
   },
   {
     ref: 'https://reactjs.org/',
     path: '/react.svg',
-    text: 'React.js',
+    text: 'React.js'
   },
   {
     ref: 'https://redux.js.org/',
     path: '/redux.svg',
-    text: 'Redux',
+    text: 'Redux'
   },
   {
     ref: 'https://jestjs.io/',
     path: '/jest.svg',
-    text: 'Jest',
+    text: 'Jest'
   },
   {
     ref: 'https://tailwindcss.com/',
     path: '/tailwindcss.svg',
-    text: 'Tailwindcss',
+    text: 'Tailwindcss'
   },
   {
     ref: 'https://getbootstrap.com/',
     path: '/bootstrap-5.svg',
-    text: 'Bootstrap 5',
-  },
+    text: 'Bootstrap 5'
+  }
 ];
 
 const technologiesBackEnd = [
   {
     ref: 'https://nodejs.org/en/',
     path: '/nodejs.svg',
-    text: 'Nodejs',
+    text: 'Nodejs'
   },
   {
     ref: 'https://expressjs.com/',
     path: '/expressjs.svg',
-    text: 'Express.js',
+    text: 'Express.js'
   },
   {
     ref: 'https://www.mysql.com/',
     path: '/mysql.svg',
-    text: 'MySQL',
+    text: 'MySQL'
   },
   {
     ref: 'https://sequelize.org/',
     path: '/sequelizejs.svg',
-    text: 'Sequelize',
+    text: 'Sequelize'
   },
   {
     ref: 'https://www.typescriptlang.org/',
     path: '/typescript.svg',
-    text: 'TypeScript',
+    text: 'TypeScript'
   },
   {
     ref: 'https://www.mongodb.com/',
     path: '/mongodb.svg',
-    text: 'MongoDB',
+    text: 'MongoDB'
   },
   {
     ref: 'https://mongoosejs.com/',
     path: '/mongoose.svg',
-    text: 'Mongoose',
-  },
+    text: 'Mongoose'
+  }
 ];
 
 function Technologies() {
@@ -118,10 +118,7 @@ function Technologies() {
         </div>
       </div>
       <button className="py-2 text-white dark:text-zinc-900 w-52 self-center rounded-2xl bg-cyan-500 dark:bg-cyan-300 shadow-lg shadow-zinc-800/5 ring-1 ring-cyan-200 backdrop-blur transition hover:bg-cyan-600 dark:hover:bg-cyan-400">
-        <Link
-          className="font-semibold"
-          to="/projects"
-        >
+        <Link className="font-semibold" to="/projects">
           Meu portfólio
         </Link>
       </button>

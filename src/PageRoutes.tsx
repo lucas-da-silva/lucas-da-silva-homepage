@@ -4,7 +4,7 @@ import {
   ProjectsPage,
   AboutPage,
   ProjectDetailsPage,
-  NotFoundPage,
+  NotFoundPage
 } from './pages';
 import { projects } from './utils';
 function PageRoutes() {

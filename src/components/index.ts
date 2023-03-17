@@ -19,5 +19,5 @@ export {
   ProjectCard,
   HomeTitle,
   IconLinks,
-  ProjectDetailsCard,
+  ProjectDetailsCard
 };
