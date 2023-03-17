@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 import Navbar from './Navbar';
-import { Bars3Icon } from '@heroicons/react/24/outline';
 import NavbarDropdown from './NavbarDropdown';
 
 function Header() {
