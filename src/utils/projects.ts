@@ -2,6 +2,13 @@ import { IProject } from '../interfaces';
 
 const projects: IProject[] = [
   {
+    img: '/projects/wallet.png',
+    title: 'Wallet',
+    describe:
+      'Carteira virtual onde é possível realizar diversas operações com gastos',
+    pageDetails: 'wallet'
+  },
+  {
     img: '/projects/trivia.png',
     title: 'Jogo Trivia',
     describe: 'Jogo de perguntas e respostas, semelhante ao Show do milhão',
@@ -19,13 +26,6 @@ const projects: IProject[] = [
     describe:
       'Aplicação de futebol que possui um ranking e partidas de times de futebol',
     pageDetails: 'soccerclub'
-  },
-  {
-    img: '/projects/trybewallet.png',
-    title: 'Trybewallet',
-    describe:
-      'Carteira virtual onde é possível realizar diversas operações com gastos',
-    pageDetails: 'trybewallet'
   },
   {
     img: '/projects/tryunfo.png',

@@ -2,6 +2,17 @@ import { IProjectDetails } from '../interfaces';
 
 const projectsDetails: IProjectDetails[] = [
   {
+    images: ['/projects/wallet.png'],
+    title: 'Wallet',
+    describe:
+      'Carteira virtual onde é possível adicionar, editar e remover os gastos em diversas moedas disponíveis por uma tabela com todos os gastos convertidos para Real.',
+    stacks: ['React', 'Redux', 'Jest', 'React Testing Library', 'Bootstrap'],
+    platforms: ['Web'],
+    website: 'https://lucas-wallet.vercel.app',
+    source: 'https://github.com/lucas-da-silva/wallet',
+    video: '/videos/wallet.mp4'
+  },
+  {
     images: ['/projects/trivia.png'],
     title: 'Jogo Trivia',
     describe:
@@ -29,16 +40,6 @@ const projectsDetails: IProjectDetails[] = [
     stacks: ['NodeJS', 'ExpressJS', 'MySQL', 'Sequelize'],
     source: 'https://github.com/lucas-da-silva/api-trybe-soccer-club',
     video: '/videos/trybe-soccer-club.mp4'
-  },
-  {
-    images: ['/projects/trybewallet.png'],
-    title: 'Trybewallet',
-    describe:
-      'Carteira virtual onde é possível adicionar, editar e remover os gastos em diversas moedas disponíveis por uma tabela com todos os gastos convertidos para Real.',
-    stacks: ['React', 'Redux', 'Jest', 'React Testing Library', 'Bootstrap'],
-    platforms: ['Web'],
-    website: 'https://lucas-da-silva.github.io/trybewallet/',
-    source: 'https://github.com/lucas-da-silva/trybewallet'
   },
   {
     images: ['/projects/tryunfo.png'],
