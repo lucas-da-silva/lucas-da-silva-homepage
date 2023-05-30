@@ -50,6 +50,21 @@ const technologiesBackEnd = [
     text: 'Nodejs'
   },
   {
+    ref: 'https://www.python.org/',
+    path: '/python.svg',
+    text: 'Python'
+  },
+  {
+    ref: 'https://www.typescriptlang.org/',
+    path: '/typescript.svg',
+    text: 'TypeScript'
+  },
+  {
+    ref: 'https://www.java.com/',
+    path: '/java.svg',
+    text: 'Java'
+  },
+  {
     ref: 'https://expressjs.com/',
     path: '/expressjs.svg',
     text: 'Express.js'
@@ -63,11 +78,6 @@ const technologiesBackEnd = [
     ref: 'https://sequelize.org/',
     path: '/sequelizejs.svg',
     text: 'Sequelize'
-  },
-  {
-    ref: 'https://www.typescriptlang.org/',
-    path: '/typescript.svg',
-    text: 'TypeScript'
   },
   {
     ref: 'https://www.mongodb.com/',
