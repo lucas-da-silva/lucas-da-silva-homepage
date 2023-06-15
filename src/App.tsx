@@ -1,6 +1,9 @@
+import { inject } from '@vercel/analytics';
 import PageRoutes from './PageRoutes';
 import { Footer } from './components';
 import PortfolioProvider from './provider/PortfolioProvider';
+ 
+inject();
 
 function App() {
   if (localStorage.isLightMode) {
